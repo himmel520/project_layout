@@ -9,6 +9,7 @@
 }
 </pre>
 <p>response:</p>
+<p>401 Unauthorized</p>
 <pre>{
   "message": "invalid token"
 }</pre>
@@ -31,11 +32,14 @@
 }
 </pre>
 <p>response:</p>
+<p>201 Created</p>
 <pre>
 {
   "message": "email was registered"
 }
 </pre>
+<p>400 Bad Request</p>
+<pre></pre>
 
 <h3>/api/login POST</h3>
 <p>request:</p>
@@ -48,11 +52,13 @@
 }
 </pre>
 <p>response:</p>
+<p>200 OK</p>
 <pre>
 {
   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
 }
 </pre>
+<p>401 Unauthorized</p>
 <pre>
 {
   "message": "invalid email or password"
@@ -68,9 +74,11 @@
   }
 }</pre>
 <p>response:</p>
+<p>200 OK</p>
 <pre>{
   "playlistNamesUsers" : ["rock", "qwerfr"]
 }</pre>
+
 
 <h2>User page</h2>
 <h3>/api/user GET</h3>
@@ -81,6 +89,7 @@
   }
 }</pre>
 <p>response:</p>
+<p>200 OK</p>
 <pre>{
   "UserData": {
     "userId": "12",
@@ -127,9 +136,11 @@
   }
 }</pre>
 <p>response:</p>
+<p>200 OK</p>
 <pre>{
   "message": "success"
 }</pre>
+<p>404 Not Found</p>
 <pre>{
   "message": "error"	
 }</pre>
