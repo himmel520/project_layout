@@ -33,11 +33,6 @@
 <p>response:</p>
 <pre>
 {
-  "message": "success"
-}
-</pre>
-<pre>
-{
   "message": "email was registered"
 }
 </pre>
