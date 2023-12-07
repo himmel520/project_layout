@@ -39,7 +39,11 @@
 }
 </pre>
 <p>400 Bad Request</p>
-<pre></pre>
+<pre>
+{
+  "message": ""
+}
+</pre>
 
 <h3>/api/login POST</h3>
 <p>request:</p>
@@ -66,7 +70,7 @@
 </pre>
 
 <h2>Home страница</h2>
-<h3>/api/HomePage GET</h3>
+<h3>/api/homePage GET</h3>
 <p>request:</p>
 <pre>{
   "headers": {
@@ -76,9 +80,57 @@
 <p>response:</p>
 <p>200 OK</p>
 <pre>{
-  "playlistNamesUsers" : ["rock", "qwerfr"]
+  "playlistNamesUsers" : [
+    "rock", 
+    "qwerfr"
+  ],
+  "popularSongs": [
+    "name1",
+    "name2"
+  ],
+  "popularPlaylists": [
+    "name1",
+    "name2"
+  ]
 }</pre>
 
+<h2>Liked страница</h2>
+<h3>/api/likedPage GET</h3>
+<p>request:</p>
+<pre>{
+  "headers": {
+    "Authorization": "Bearer access_token_name"
+  }
+}</pre>
+<p>response:</p>
+<p>200 OK</p>
+<pre>{
+  "likedSongs": [
+    "name1",
+    "name2"
+  ]
+}</pre>
+
+<h2>My Library страница</h2>
+<h3>/api/myLibraryPage GET</h3>
+<p>request:</p>
+<pre>{
+  "headers": {
+    "Authorization": "Bearer access_token_name"
+  }
+}</pre>
+<p>response:</p>
+<p>200 OK</p>
+<pre>{
+  "userSongs": [
+    "name1",
+    "name2"
+  ],
+  "userPlaylists": [
+    "name1",
+    "name2"
+  ]
+}</pre>
 
 <h2>User page</h2>
 <h3>/api/user GET</h3>
