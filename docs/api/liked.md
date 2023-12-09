@@ -21,6 +21,21 @@ Content-Type: application/json<br>
 }
 </pre>
 
+<h3>Добавить песню в избранное</h3>
+<p>request:</p>
+<pre>
+POST /api/liked HTTP/1.1
+Authorization: Bearer access_token_name
+Content-Type: application/json<br>
+{
+  "uid": "new_song_uid",
+}
+</pre>
+<p>response:</p>
+<pre>
+HTTP/1.1 200 OK
+</pre>
+
 <h3>Удаление добавленной песни</h3>
 <p>request:</p>
 <pre>
