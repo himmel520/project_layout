@@ -48,6 +48,10 @@ Content-Type: application/json<br>
 <p>response:</p>
 <pre>
 HTTP/1.1 201 Created
+Content-Type: application/json<br>
+{
+  "uid": "123456"
+}
 </pre>
 <p>response:</p>
 <pre>
