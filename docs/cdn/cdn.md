@@ -1,6 +1,6 @@
 <h1>Структура</h1>
 <ol>
-    <li><a href="docs/api/middleware.md">Мидлварь</a></li>
+    <li><a href="https://github.com/himmel520/project_layout/blob/main/docs/api/middleware.md">Мидлварь</a></li>
     <li>Альбом
     <ul>
       <li>Добавить альбом(песни и картинка)</li>
