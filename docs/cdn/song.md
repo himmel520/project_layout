@@ -13,7 +13,7 @@
 <h3>Получить песню</h3>
 <p>request:</p>
 <pre>
-GET /cdn/albums/{album_id}/{song_id} HTTP/1.1
+GET /cdn/songs?album=id&song=id  HTTP/1.1
 Authorization: Bearer access_token_name
 </pre>
 <p>response:</p>
