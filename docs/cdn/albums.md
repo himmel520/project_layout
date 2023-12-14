@@ -45,7 +45,7 @@ Content-Type: application/json<br>
 <h3>Удалить альбом(песни и картинка)</h3>
 <p>request:</p>
 <pre>
-DELETE /cdn/albums/123456 HTTP/1.1
+DELETE /cdn/albums?album=id HTTP/1.1
 Authorization: Bearer access_token_name
 </pre>
 <p>response:</p>
