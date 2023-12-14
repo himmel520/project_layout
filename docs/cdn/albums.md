@@ -3,12 +3,9 @@
 <h3>Добавить альбом(песни и картинка)</h3>
 <p>request:</p>
 <pre>
-POST /cdn/albums HTTP/1.1
+POST /cdn/albums?album=id HTTP/1.1
 Authorization: Bearer cdn_access_token
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW<br>
-------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="album_uid"<br>
-123456
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="cover_image"; filename="album_uid.jpg"
 Content-Type: image/jpeg<br>
